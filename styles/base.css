@@ -9,9 +9,9 @@
 
     /*Color*/
     --dark-color: #131b0d;
-    --lighter-color: #9dcfad;
+    --lighter-color: #c8f3d5;
     --accent2: #7eaf5d;
-    --accent1: #7ebfa3;
+    --accent1: #7fc7a8;
 }
 
 * {
@@ -24,7 +24,7 @@ body {
     font-family: var(--body-font);
     font-size: var(--body-font-size);
     font-weight: var(--body-font-weight);
-
+    color: var(--dark-color);
     display: grid;
     height: 100vh;
     grid-template: auto 1fr auto / 1fr 1fr 1fr 1fr;
@@ -117,7 +117,7 @@ nav a:hover{
 
 .card {
     display: grid;
-    grid-template: auto auto auto / 1fr 1fr 1fr;
+    grid-template: auto auto auto / auto auto 1fr;
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
@@ -180,7 +180,11 @@ nav a:hover{
     align-self: center ;
 }
 
+#top-songs a {
+    color: rgb(15, 100, 15);
+}
+
 #top-songs a:hover {
-    color: rgb(30, 53, 185);
+    color: var(--dark-color);
     text-decoration: underline  ;
 }
