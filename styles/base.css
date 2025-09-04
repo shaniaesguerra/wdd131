@@ -40,7 +40,6 @@ header {
     background: var(--accent2);
     padding: 2rem;
     grid-column: 1 / 5;
-    
 }
 
 footer {
@@ -101,6 +100,8 @@ nav a:hover{
 }
 
 #course-title{
+    display: block;
+    text-align: center;
     font-size: var(--heading-font-size);
     font-family: var(--heading-font);
     font-weight: var(--heading-font-weight);
