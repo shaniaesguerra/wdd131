@@ -122,7 +122,7 @@ nav a:hover{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
-.card h1{
+.card h2{
     grid-column: 1/4;
     text-align: center;
     align-self: center;
