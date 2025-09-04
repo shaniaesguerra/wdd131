@@ -61,6 +61,7 @@ h1 {
     font-family: var(--heading-font);
     font-size: var(--heading-font-size);
     font-weight: var(--heading-font-weight);
+    font-style: italic;
 }
 
 ul{
