@@ -11,6 +11,12 @@
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--body-font);
     font-size: var(--body-font-size);
@@ -59,7 +65,7 @@ nav ul{
     align-items: center;
 }
 
-nav li {
+nav ul li {
     flex: 1 1 auto;
 }
 
