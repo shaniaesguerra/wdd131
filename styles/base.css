@@ -101,8 +101,9 @@ nav a:hover{
 }
 
 #course-title{
-    text-align: center;
-    font-size: smaller;
+    font-size: var(--heading-font-size);
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
     color: white;
 }
 
