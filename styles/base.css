@@ -22,6 +22,7 @@ body {
 }
 
 nav {
+    background-color: rgb(170, 170, 170);
     margin: 2rem -2rem -2rem -2rem;
     max-width: 100vw;
 }
@@ -55,7 +56,7 @@ nav ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(170, 170, 170);
+    align-items: center;
 }
 
 nav li {
@@ -63,6 +64,13 @@ nav li {
 }
 
 nav a {
+    display: block  ;
     text-decoration: none;
+    text-align: center  ;
     color: black;
+    padding: 1rem;
+}
+
+nav a:hover{
+    text-decoration: overline;
 }
