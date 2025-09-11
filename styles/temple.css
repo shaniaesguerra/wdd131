@@ -1,0 +1,57 @@
+:root {
+    /* Fonts */
+    --heading-font: "Libre Baskerville", serif;
+    --heading-font-size: 1.5em;
+    --heading-font-weight: 700;
+    --body-font: "IBM Plex Sans", sans-serif;
+    --body-font-size: 16px;
+    --body-font-weight: 350;
+
+    /*Color
+      coolors link: https: //coolors.co/0a090c-f0edee-07393c-2c666e-90ddf0
+    */
+    --dark-color: #0A090C;
+    --primary-color: #07393C;
+    --accent2: #2C666E;
+    --accent1: #90DDF0;
+    --background-color: #F0EDEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+}
+
+h1{
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+}
+
+nav{
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover{
+    background-color: var(--accent2);
+}
