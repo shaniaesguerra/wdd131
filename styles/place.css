@@ -34,7 +34,6 @@ div {
     background-color: var(--light-color);
 }
 
-
 tr,
 td {
     padding: 0.5em;
@@ -72,6 +71,11 @@ h2 {
     object-fit: cover;
 }
 
+#weather h2::before{
+    content: url("/images/rainy.svg") / "Light Rain";
+    width:20px;
+    height: 20px;
+}
 
 
 footer {
@@ -79,7 +83,6 @@ footer {
     background-color: var(--dark-color);
     color: #ffff;
     padding: 1em;
-    margin: 0;
 }
 
 @media screen and (min-width: 1000px) {
@@ -91,6 +94,7 @@ footer {
         position: absolute;
         border-radius: 1.5em;
         background-color: rgb(255, 255, 255, 0.7);
+        padding: 1em;
     }
 
     #data {
@@ -99,14 +103,13 @@ footer {
     }
 
     #weather{
-        bottom: 100px;
+        bottom: 70px;
         right: 20px;
+
     }
 
-    #weather::before{
-        content:"⛅";              
-        position: absolute;
-        
+    #weather h2::before{
+        content:"🌧️" / "Light Rain";             
     }
 
 }
