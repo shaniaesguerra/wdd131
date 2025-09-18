@@ -37,7 +37,7 @@ div {
 
 #weather {
     display: grid;
-    grid-template-columns: auto auto auto /auto auto auto;
+    grid-template-columns: auto 1fr auto /auto 1fr auto;
 }
 
 #weather h2 {
@@ -96,10 +96,6 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
-
-
-
-
 
 footer {
     text-align: center;
