@@ -8,3 +8,27 @@ year.innerHTML = `<span id="currentyear">&copy ${today.getFullYear()}</span>`;
 modification.innerHTML = `<p id="lastModified">Last Modified: ${modificationDate}</p>`;
 
 //Calculate Wind Chill
+//Wind Chill (ºC) = 13.12 + 0.6215 T - 11.37 (V^0.16) + 0.3965 T (V^0.16)
+// Where: T - Air Temperature in Celsius
+//        V - Wind speed in kilometers per hour (km/h)
+
+const windChillstr = document.querySelector("#windChill");
+const tempstr = document.querySelector("#temp"); //container for temperature in Celsius
+const windSpeedstr = document.querySelector("#windSpeed"); //container for windSpeed in km.h
+
+//Convert values into numbers
+let tempVal = Number(tempstr.innerHTML);
+let windSpeedVal = Number(windSpeedstr.innerHTML);
+let windChillVal = 0;
+
+if (tempVal <= 10 && windSpeedVal > 4.8) {
+    windChillVal = 13.12 + (0.6216 * tempVal) - (11.37 * (windSpeedVal ** 0.16)) + (0.3965 * tempVal * (windSpeedVal ** 0.16));
+} else {
+    windChillVal = 0;
+}
+
+if (windChillVal != 0) {
+    windChillstr.innerHTML = `<td id="#windChill">${String(windChillVal)}</td>`;
+} else {
+    windChillstr.innerHTML = `<td id="#windChill"> N/A </td>`;
+}
