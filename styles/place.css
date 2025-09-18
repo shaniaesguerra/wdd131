@@ -19,6 +19,7 @@
     --primary-color: #505629;
 }
 
+/*Mobile View*/
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +64,7 @@ h2 {
     font-size: var(--subheading-font-size);
     font-weight: var(--subheading-font-weight);
     border-radius: 0.6em;
+
 }
 
 .hero img {
@@ -71,10 +73,12 @@ h2 {
     object-fit: cover;
 }
 
-#weather h2::before{
+#weather h2::after {
     content: url("/images/rainy.svg") / "Light Rain";
-    width:20px;
-    height: 20px;
+    display: inline-block;
+    width: 60px;
+    height: auto;
+    margin-left: 0.5em;
 }
 
 
@@ -85,6 +89,7 @@ footer {
     padding: 1em;
 }
 
+/*Large View*/
 @media screen and (min-width: 1000px) {
     .hero {
         position: relative;
@@ -102,14 +107,23 @@ footer {
         left: 20px;
     }
 
-    #weather{
-        bottom: 70px;
+    #weather {
+        bottom: 8em;
         right: 20px;
-
+        text-align: center;
     }
 
-    #weather h2::before{
-        content:"🌧️" / "Light Rain";             
+    #weather h2::before {
+        content: "🌧️" / "Light Rain";
+        margin-left: 1.5em;
+    }
+
+    #weather h2::after {
+        content: "" / "Light Rain";
+    }
+
+    h2:hover {
+        transform: scale(1.05);
     }
 
 }
