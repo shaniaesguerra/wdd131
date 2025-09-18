@@ -16,13 +16,20 @@ const windChillstr = document.querySelector("#windChill");
 const tempstr = document.querySelector("#temp"); //container for temperature in Celsius
 const windSpeedstr = document.querySelector("#windSpeed"); //container for windSpeed in km.h
 
+//Function to calculate wind Chill
+function calculateWindChill(temp, windSpeed) {
+    return 13.12 + (0.6216 * temp) - (11.37 * (windSpeed ** 0.16)) + (0.3965 * temp * (windSpeed ** 0.16));
+
+}
+
 //Convert values into numbers
 let tempVal = Number(tempstr.innerHTML);
 let windSpeedVal = Number(windSpeedstr.innerHTML);
 let windChillVal = 0;
 
+//Evaluate result
 if (tempVal <= 10 && windSpeedVal > 4.8) {
-    windChillVal = 13.12 + (0.6216 * tempVal) - (11.37 * (windSpeedVal ** 0.16)) + (0.3965 * tempVal * (windSpeedVal ** 0.16));
+    windChillVal = calculateWindChill(tempVal, windSpeedVal);
 } else {
     windChillVal = 0;
 }
@@ -32,3 +39,5 @@ if (windChillVal != 0) {
 } else {
     windChillstr.innerHTML = `<td id="#windChill"> N/A </td>`;
 }
+
+
