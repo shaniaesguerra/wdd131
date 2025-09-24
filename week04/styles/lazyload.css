@@ -1,0 +1,17 @@
+h1, footer{
+    text-align: center;
+}
+
+main{
+    margin: 0 auto;
+    display: block;
+    align-content: center ;
+}
+
+
+img{
+    width: auto;
+    height: 600px;
+    background-color: #000;
+    animation: fade 15s;
+}
