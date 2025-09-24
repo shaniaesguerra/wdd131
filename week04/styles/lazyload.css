@@ -5,7 +5,8 @@ h1, footer{
 main{
     margin: 0 auto;
     display: block;
-    align-content: center ;
+    align-content: center;
+    justify-content: center;
 }
 
 
@@ -13,5 +14,15 @@ img{
     width: auto;
     height: 600px;
     background-color: #000;
-    animation: fade 15s;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
