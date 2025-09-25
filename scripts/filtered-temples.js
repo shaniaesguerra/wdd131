@@ -105,33 +105,31 @@ const temples = [
 
 ];
 
-/*------------------------------------------------------------------------------------------ 
-Create temple cards:
-    - for loop going through temples array
-    - make a fig>img container for each one
-    - each container has:
-         = name of the temple
-         = location of the temple
-         = date the temple was dedicated
-         = total area of tempple in sq ft
-         = provided image of temple (include alt and loading = lazy attribiutes)
 
-    ** container will populate main **
-------------------------------------------------------------------------------------------*/
 //select the div
 const templeDiv = document.querySelector(".photo-grid");
 
 //populate photo grid
-for (let i = 0; i < temples.length; i++) {
-    const temple = temples[i];
-    templeDiv.innerHTML += `
-        <figure>
-            <h3>${temple.templeName}</h3>
-            <ul>
-                <li>LOCATION: ${temple.location}</li>
-                <li>DEDICATED: ${temple.dedicated}</li>
-                <li>SIZE: ${temple.area} sq ft</li>
-            </ul>
-            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading = lazy>
-        </figure>`;
+createTempleCards(temples, templeDiv);
+
+/*---------------------------------------------------------------------------------------------------------- 
+Function: createTempleCards (templeObj, container)
+Purpose: create temple cards which will populate in the HTML element specified.
+Description: Has two arguements, "templeObj" which is the name of the obj you want to iterate through, and
+            "container" which is the HTML element you would like it to populate in.
+------------------------------------------------------------------------------------------------------------*/
+function createTempleCards (templeObj, container) {
+    for (let i = 0; i < templeObj.length; i++) {
+        const temple = templeObj[i];
+        container.innerHTML += `
+            <figure>
+                <h3>${temple.templeName}</h3>
+                <ul>
+                    <li>LOCATION: ${temple.location}</li>
+                    <li>DEDICATED: ${temple.dedicated}</li>
+                    <li>SIZE: ${temple.area} sq ft</li>
+                </ul>
+                <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading = lazy>
+            </figure>`;
+    }
 }
