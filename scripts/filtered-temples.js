@@ -106,22 +106,65 @@ const temples = [
 ];
 
 
-//select the div
-const templeDiv = document.querySelector(".photo-grid");
+//select buttons
+const homeLink = document.querySelector("#home");
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+
+//select the Page title
+const pageHeading = document.querySelector("#page-title");
 
 //populate photo grid
-createTempleCards(temples, templeDiv);
+createTempleCards(temples);
+
+
+//add event listeners to navigation
+homeLink.addEventListener("click", () => {
+    pageHeading.textContent = 'Home';
+    createTempleCards(temples);
+});
+
+oldLink.addEventListener("click", () => {
+    pageHeading.textContent = 'Old Temples';
+    createTempleCards(temples.filter(temple => Number(temple.dedicated.substring(0, 4)) < 1900));
+});
+
+newLink.addEventListener("click", () => {
+    pageHeading.textContent = 'New Temples';
+    createTempleCards(temples.filter(temple => Number(temple.dedicated.substring(0, 4)) > 2000));
+});
+
+largeLink.addEventListener("click", () => {
+    pageHeading.textContent = 'Large Temples';
+    createTempleCards(temples.filter(temple => temple.area > 90000));
+});
+
+smallLink.addEventListener("click", () => {
+    pageHeading.textContent = 'Small Temples';
+    createTempleCards(temples.filter(temple => temple.area < 10000));
+});
+
+
 
 /*---------------------------------------------------------------------------------------------------------- 
 Function: createTempleCards (templeObj, container)
 Purpose: create temple cards which will populate in the HTML element specified.
-Description: Has two arguements, "templeObj" which is the name of the obj you want to iterate through, and
-            "container" which is the HTML element you would like it to populate in.
+Description: Has one arguements, "templeObj" which is the name of the obj you want to iterate through.
+            It will populate the photo grid with temple cards when called.
 ------------------------------------------------------------------------------------------------------------*/
-function createTempleCards (templeObj, container) {
+function createTempleCards(templeObj) {
+    //select the div
+    const templeDiv = document.querySelector(".photo-grid");
+
+    //empty the div
+    templeDiv.innerHTML = "";
+
+    //populate the div
     for (let i = 0; i < templeObj.length; i++) {
         const temple = templeObj[i];
-        container.innerHTML += `
+        templeDiv.innerHTML += `
             <figure>
                 <h3>${temple.templeName}</h3>
                 <ul>
