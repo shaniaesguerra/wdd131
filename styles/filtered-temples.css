@@ -122,3 +122,39 @@ footer{
     justify-content: center;
     align-content: center;
 }
+
+.photo-grid ul {
+    list-style-type: none;
+    padding: 1em;
+}
+
+.photo-grid h3 {
+    padding: 1em;
+}
+
+.photo-grid img{
+    animation: fade 6s; 
+    margin-bottom: 1em;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.photo-grid figure{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.photo-grid figure, .photo-grid img {
+    border-radius: 0.6em;
+}
+
+.photo-grid figure:hover{
+    transform: scale(1.02);
+}

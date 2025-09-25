@@ -118,4 +118,20 @@ Create temple cards:
 
     ** container will populate main **
 ------------------------------------------------------------------------------------------*/
+//select the div
+const templeDiv = document.querySelector(".photo-grid");
 
+//populate photo grid
+for (let i = 0; i < temples.length; i++) {
+    const temple = temples[i];
+    templeDiv.innerHTML += `
+        <figure>
+            <h3>${temple.templeName}</h3>
+            <ul>
+                <li>LOCATION: ${temple.location}</li>
+                <li>DEDICATED: ${temple.dedicated}</li>
+                <li>SIZE: ${temple.area} sq ft</li>
+            </ul>
+            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading = lazy>
+        </figure>`;
+}
