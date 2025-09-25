@@ -78,4 +78,44 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     // Add more temple objects here...
+    {
+        templeName: "Urdaneta Philippines",
+        location: "Urdaneta City, Pangasinan, Philippines",
+        dedicated: "2024, April, 28",
+        area: 32604,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/urdaneta-philippines-temple/urdaneta-philippines-temple-45856.jpg"
+    },
+    {
+        templeName: "Manila Philippines",
+        location: "Metro Manila, Philippines",
+        dedicated: "1984, September, 27",
+        area: 26683,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
+    },
+    {
+        templeName: "Calgary Alberta",
+        location: "Calgary, Alberta, Canada",
+        dedicated: "2012, October, 28",
+        area: 33000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/calgary-alberta-temple/calgary-alberta-temple-3888.jpg"
+    },
+
 ];
+
+/*------------------------------------------------------------------------------------------ 
+Create temple cards:
+    - for loop going through temples array
+    - make a fig>img container for each one
+    - each container has:
+         = name of the temple
+         = location of the temple
+         = date the temple was dedicated
+         = total area of tempple in sq ft
+         = provided image of temple (include alt and loading = lazy attribiutes)
+
+    ** container will populate main **
+------------------------------------------------------------------------------------------*/
+
