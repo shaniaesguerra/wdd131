@@ -35,7 +35,7 @@ body {
 main {
     margin: 1rem;
     display: grid;
-    grid-template-columns: auto 2fr 2fr;
+    grid-template-columns: 1fr auto 1fr;
 }
 
 header,
@@ -81,7 +81,8 @@ a {
 
 h1,
 #font1,
-.navigation {
+.navigation,
+.site-name h3 {
     font-family: var(--heading-font);
     font-size: var(--heading-font-size);
     font-weight: var(--heading-font-weight);
@@ -123,8 +124,6 @@ nav a {
 #font1 p,
 #font2 p,
 #font3 p {
-    font-family: var(--body-font);
-    font-weight: var(--body-font-weight);
     font-size: 16px;
 }
 
@@ -188,29 +187,50 @@ main h1 {
 div {
     padding: 1em;
     margin: 0.5em;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: -6.7px 3.3px 8.4px -2.5px hsl(0deg 0% 63%/ 0.72);
     border-radius: 1em;
 }
 
 .site-name {
     grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    margin-left: 3em;
+    margin-right: 3em;
 }
-.site-name p {
-    font-family: var(--heading-font);
-    font-size: 1.5em;
-    font-weight: var(--heading-font-weight);
+
+.site-name h2 {
+    grid-column:1/2;
+    padding: 1em;
+}
+
+.site-name h3 {
+    grid-column: 2/4;
     text-transform: uppercase;
-    margin: 0.5em;
+    align-content: center;
+}
+
+.site-name img {
+    padding: 1em;
+}
+
+.site-name li {
+    grid-column: 3/4;
+    align-content: center;
+    justify-content: center;
+    padding: 1em;
 }
 
 .site-purpose {
-    grid-column: 1/2;
+    grid-column: 3/4;
+    padding: 1em;
 }
 
 .scenarios {
     grid-column: 2/4;
 }
-.scenarios ul{
+
+.scenarios ul {
     list-style-position: inside;
 }
 
