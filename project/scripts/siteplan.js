@@ -3,7 +3,10 @@ const modification = document.querySelector("#lastModified");
 const today = new Date();
 const modificationDate = document.lastModified;
 
+//get current year
 year.innerHTML = `<span id="currentyear">&copy ${today.getFullYear()}</span>`;
+
+//Get last modification date and time
 modification.innerHTML = `<p id="lastModified">Last Modified: ${modificationDate}</p>`;
 
 // Hamburger menu
