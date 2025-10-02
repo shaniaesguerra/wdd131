@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD131 - W03 Product Review Form - Shania Esguerra</title>
+    <meta name="description"
+        content="Shania Esguerra's Week 05 Assignment - Product Review Form for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Shania Esguerra">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>W05 Assignment: Product Review Form</h1>
+    </header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html">
+
+            <!--Product Name-->
+            <fieldset>
+                <label>Product Name
+                    <select name="prodName" id="prod-name" required>
+                        <option value="" selected disabled>Select a Product ... </option>
+                        <option value="rollpin">Silicone Rolling Pin</option>
+                        <option value="sheets">Cookie Sheets (3 pcs)</option>
+                        <option value="parchment">Silicone Parchment Roll</option>
+                        <option value="scooper">Cookie Scooper</option>
+                        <option value="mat">Macaroon Mat (3 pcs)</option>
+                        <option value="apron">Baker's Apron (2 pcs)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+
+            <!--Overall Rating-->
+            <fieldset>
+                <label>Overall Rating</label>
+                <label>★<input type="radio" name="rating" id="one-star" value="1" required></label>
+                <label>★★<input type="radio" name="rating" id="two-star" value="2" required></label>
+                <label>★★★<input type="radio" name="rating" id="three-star" value="3" required></label>
+                <label>★★★★<input type="radio" name="rating" id="four-star" value="4" required></label>
+                <label>★★★★★<input type="radio" name="rating" id="five-star" value="5" required></label>
+            </fieldset>
+
+            <!--Date of installation-->
+            <fieldset>
+                <label> Date of Installation <input type="date" name="installDate" id="install-date"></label>
+            </fieldset>
+
+            <!--Features Feedback-->
+            <fieldset>
+                <label>Which features did you find useful in the product?</label>
+                <div>(Check all that apply)</div>
+                <label><input id="durability" type="checkbox" name="durability" value="durability">Durabitlity </label>
+                <label><input id="ease" type="checkbox" name="ease" value="ease">Ease of Use</label>
+                <label><input id="perf" type="checkbox" name="perf" value="performance">Performance</label>
+                <label><input id="design" type="checkbox" name="design" value="design">Design</label>
+            </fieldset>
+
+            <!--Written Review-->
+            <fieldset>
+                <label>Written Review (optional)
+                    <input type="text" id="writ-review" name="writReview"></label>
+            </fieldset>
+
+            <!--Written Review-->
+            <fieldset>
+                <label>Written Review (optional)
+                    <input type="text" id="writ-review" name="writReview"></label>
+            </fieldset>
+
+            <!--Username-->
+            <fieldset>
+                <label>Your Name (optional)
+                    <input type="text" id="name" name="name"></label>
+            </fieldset>
+
+            <!--Post Review Button-->
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            &#128059; Shania Esguerra &#128059; Alberta,Canada
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
