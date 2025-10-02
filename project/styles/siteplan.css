@@ -6,7 +6,7 @@
 
     --subheading-font: "Trirong", serif;
     --subheading-font-weight: 500;
-    --subheading-font-size: 24px;
+    --subheading-font-size: 35px;
     --subheading-font-style: italic;
 
     --body-font: "Maitree", serif;
@@ -81,8 +81,7 @@ a {
 
 h1,
 #font1,
-.navigation,
-.site-name h3 {
+.navigation {
     font-family: var(--heading-font);
     font-size: var(--heading-font-size);
     font-weight: var(--heading-font-weight);
@@ -93,10 +92,6 @@ img {
     height: auto;
 }
 
-svg {
-    width: 24px;
-    margin-right: 0.5em;
-}
 
 nav {
     display: flex;
@@ -187,69 +182,82 @@ main h1 {
 div {
     padding: 1em;
     margin: 0.5em;
-    box-shadow: -6.7px 3.3px 8.4px -2.5px hsl(0deg 0% 63%/ 0.72);
-    border-radius: 1em;
-}
-
-.site-name {
     grid-column: 1/4;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    margin-left: 3em;
-    margin-right: 3em;
-}
-
-.site-name h2 {
-    grid-column:1/2;
-    padding: 1em;
-}
-
-.site-name h3 {
-    grid-column: 2/4;
-    text-transform: uppercase;
-    align-content: center;
 }
 
 .site-name img {
     padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .site-name li {
-    grid-column: 3/4;
-    align-content: center;
-    justify-content: center;
-    padding: 1em;
-}
-
-.site-purpose {
-    grid-column: 3/4;
-    padding: 1em;
-}
-
-.scenarios {
-    grid-column: 2/4;
+    align-content: start;
+    padding: 3em;
 }
 
 .scenarios ul {
     list-style-position: inside;
 }
 
-.color-schema {
-    grid-column: 1/2;
+
+
+#color1,
+#color2,
+#color3 {
+    border-radius: 0.6em;
+    margin: 0.5em;
+    padding: 3em;
+}
+
+#color1 {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+#color2 {
+    background-color: var(--secondary-color);
+    color: #fff
+}
+
+#color3 {
+    background-color: var(--accent);
+}
+
+.typography ul {
+    padding: 3em;
+}
+
+.wireframe figure {
+    padding: 1em;
+    margin: 1em;
     align-content: center;
-    font-size: 18px;
+    border-radius: 0.6em;
+    border-bottom: 4px solid var(--accent);
+    border-top: 4px solid var(--accent);
+    border-left: 1px solid var(--accent);
+    border-right: 1px solid var(--accent);
 }
 
-.typography {
-    grid-column: 2/4;
+.wireframe figcaption {
+    border-top: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+    padding-top: 0.5em;
+    margin-top: 0.5em;
 }
 
-.wireframe {
-    grid-column: 1/4;
+.site-name h2,
+.site-purpose h2,
+.scenarios h2,
+.color-schema h2,
+.typography h2,
+.wireframe h2 {
+    border-bottom: 4px solid var(--accent);
+    margin-bottom: 1em;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 0.6em;
 }
-
-
-
 
 
 /*Large Screen View*/
@@ -264,6 +272,75 @@ div {
         display: block;
         flex: 1 1 100%;
     }
+
+    /*Site Name section*/
+    .site-name {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    .site-name h2 {
+        grid-column: 1/4;
+    }
+
+    .site-name h3 {
+        grid-column: 2/4;
+        text-transform: uppercase;
+        align-content: center;
+    }
+
+    .site-name li {
+        grid-column: 3/4;
+    }
+
+    .site-name img {
+        padding: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Site Purpose section*/
+    .site-purpose {
+        grid-column: 1/3;
+        padding: 1em;
+    }
+
+    /*Scenarios section*/
+    .scenarios {
+        grid-column: 3/4;
+    }
+
+
+    /*Color Schema section*/
+    .color-schema {
+        grid-column: 1/2;
+        align-content: center;
+        font-size: 18px;
+    }
+
+    /*Typography section*/
+    .typography {
+        grid-column: 2/4;
+    }
+
+
+    .wireframe {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .wireframe h2 {
+        grid-column: 1/3;
+    }
+
+
+
 
     #menu {
         display: none;
