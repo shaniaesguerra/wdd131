@@ -1,0 +1,157 @@
+* {
+    margin: auto;
+    padding: 0;
+    max-width: 60vw;
+}
+
+body{
+    font-family: "Lora", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer  {
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+
+header{
+    padding: 0.5em;
+}
+
+p{
+    padding: 0.5em;
+    margin: 1em;
+}
+
+legend,
+h1,
+fieldset label,
+input[type="submit"] {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1{
+    text-align: center  ;
+}
+
+fieldset {
+    border-style: none;
+    padding: 0.5em 2%;
+    margin: 0.5em 0;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+#writ-review {
+    min-height: 100px;
+    width: 100vw;
+    text-align: center;
+    border-radius: 0.6em;
+    border: 1px solid rgba(124, 124, 124, 0.671);
+
+    font-family: "Lora", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#prod-name,
+#name,
+#install-date {
+    min-height: 45px;
+    width: 100vw;
+    text-indent: 10px;
+
+    font-family: "Lora", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input[type="submit"] {
+    min-height: 45px;
+    width: 100vw;
+    margin-left: 13px;
+    border: 1px solid rgba(124, 124, 124, 0.671);
+
+    font-size: 20px;
+    padding: 0.5em;
+    border-radius: 0.6em;
+}
+
+.features div{
+    font-family: "Lora", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0.5em;
+}
+
+.features input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    margin: 0.5em;
+}
+
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.stars {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.stars input {
+    display: none;
+}
+
+/* set properties of all labels */
+.stars>label {
+    margin: 0.2em auto;
+    font-size: 55px;
+    transition: 0.2s ease;
+    color: rgba(124, 124, 124, 0.671);
+}
+
+/* give label a hover state */
+.stars label:hover {
+    color: rgb(255, 174, 1);
+    transition: 0.2s ease;
+}
+
+.stars label:active::before {
+    transform: scale(1.1);
+}
+
+/* set shape of unselected label */
+.stars label::before {
+    content: '\2605';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+
+/* set full star shape for checked label and those that come after it */
+.stars input:checked~label:before {
+    content: '\2605';
+}

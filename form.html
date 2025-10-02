@@ -27,7 +27,8 @@
 
             <!--Product Name-->
             <fieldset>
-                <label>Product Name
+                <label>Product Name</label>
+                <label>
                     <select name="prodName" id="prod-name" required>
                         <option value="" selected disabled>Select a Product ... </option>
                         <option value="rollpin">Silicone Rolling Pin</option>
@@ -44,44 +45,53 @@
             <!--Overall Rating-->
             <fieldset>
                 <label>Overall Rating</label>
-                <label>★<input type="radio" name="rating" id="one-star" value="1" required></label>
-                <label>★★<input type="radio" name="rating" id="two-star" value="2" required></label>
-                <label>★★★<input type="radio" name="rating" id="three-star" value="3" required></label>
-                <label>★★★★<input type="radio" name="rating" id="four-star" value="4" required></label>
-                <label>★★★★★<input type="radio" name="rating" id="five-star" value="5" required></label>
+                <div class="stars">
+                    <input type="radio" name="rating" id="one-star" value="1" required>
+                    <label for="one-star"></label>
+
+                    <input type="radio" name="rating" id="two-star" value="2" required>
+                    <label for="two-star"></label>
+
+                    <input type="radio" name="rating" id="three-star" value="3" required>
+                    <label for="three-star"></label>
+
+                    <input type="radio" name="rating" id="four-star" value="4" required>
+                    <label for="four-star"></label>
+                    
+                    <input type="radio" name="rating" id="five-star" value="5" required>
+                    <label for="five-star"></label>
+                </div>
             </fieldset>
 
             <!--Date of installation-->
             <fieldset>
-                <label> Date of Installation <input type="date" name="installDate" id="install-date"></label>
+                <label>Date of Installation</label>
+                <label><input type="date" name="installDate" id="install-date"></label>
             </fieldset>
 
             <!--Features Feedback-->
-            <fieldset>
+            <fieldset class="features">
                 <label>Which features did you find useful in the product?</label>
                 <div>(Check all that apply)</div>
-                <label><input id="durability" type="checkbox" name="durability" value="durability">Durabitlity </label>
-                <label><input id="ease" type="checkbox" name="ease" value="ease">Ease of Use</label>
-                <label><input id="perf" type="checkbox" name="perf" value="performance">Performance</label>
-                <label><input id="design" type="checkbox" name="design" value="design">Design</label>
+                    <label><input id="durability" type="checkbox" name="durability" value="durability">Durabitlity
+                    </label>
+                    <label><input id="ease" type="checkbox" name="ease" value="ease">Ease of Use</label>
+                    <label><input id="perf" type="checkbox" name="perf" value="performance">Performance</label>
+                    <label><input id="design" type="checkbox" name="design" value="design">Design</label>
+                
             </fieldset>
 
             <!--Written Review-->
             <fieldset>
                 <label>Written Review (optional)
-                    <input type="text" id="writ-review" name="writReview"></label>
+                    <input type="text" id="writ-review" name="writReview" placeholder="Type your Review here..."></label>
             </fieldset>
 
-            <!--Written Review-->
-            <fieldset>
-                <label>Written Review (optional)
-                    <input type="text" id="writ-review" name="writReview"></label>
-            </fieldset>
 
             <!--Username-->
             <fieldset>
                 <label>Your Name (optional)
-                    <input type="text" id="name" name="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Type your name here..."></label>
             </fieldset>
 
             <!--Post Review Button-->
