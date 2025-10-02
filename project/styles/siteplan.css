@@ -155,7 +155,7 @@ nav a {
 }
 
 #menu.open::before {
-    content: "✖";
+    content: "⛌";
 }
 
 /*for toggle event */
