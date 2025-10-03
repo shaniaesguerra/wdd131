@@ -81,6 +81,15 @@ input[type="checkbox"] {
     margin-right: 6px;
 }
 
+
+select:required, input:required{
+    border-bottom: solid 5px red;
+}
+
+select:required:valid, input:required:valid{
+    border-bottom: solid 5px green;
+}
+
 #writ-review {
     min-height: 100px;
     width: 100vw;
@@ -190,6 +199,7 @@ input[type="submit"]:hover {
     content: '\2605';
 }
 
+/*larger screens*/
 @media screen and (min-width: 700px) {
 
     * {
