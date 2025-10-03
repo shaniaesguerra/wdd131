@@ -163,8 +163,11 @@ input[type="submit"]:hover {
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    margin-top: 20px;
     position: relative;
+    background-color: #449dd15e;
+    border-radius:  4em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 .stars input {
@@ -191,7 +194,7 @@ input[type="submit"]:hover {
 .stars label::before {
     content: '\2606';
     position: absolute;
-    top: 0px;
+    top: 25px;
     line-height: 26px;
 }
 
