@@ -84,14 +84,16 @@ input[type="checkbox"] {
 #writ-review {
     min-height: 100px;
     width: 100vw;
-    text-align: center;
+    text-indent: 10px;
     border-radius: 0.6em;
     border: 1px solid rgba(124, 124, 124, 0.671);
+    padding-top: 0.5em;
 
     font-family: "Lora", serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    color: rgba(92, 92, 92, 0.801);
 }
 
 #prod-name,
