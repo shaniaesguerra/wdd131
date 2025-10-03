@@ -1,30 +1,39 @@
 * {
     margin: auto;
     padding: 0;
-    max-width: 60vw;
+    max-width: 90vw;
 }
 
-body{
+body {
     font-family: "Lora", serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+
 }
 
-footer  {
+footer {
     margin-top: 1em;
-    padding: 1em;
     text-align: center;
     border-top: 1px solid #000;
 }
 
-header{
-    padding: 0.5em;
-}
-
-p{
+#thanks {
     padding: 0.5em;
     margin: 1em;
+}
+
+header,
+footer {
+    background-color: #0E0E52;
+    color: #fff;
+    padding: 1em;
+}
+
+footer {
+    border-top: 8px solid #5dc4ffdc;
+    border-top-right-radius: 0.6em;
+    border-top-left-radius: 0.6em;
 }
 
 legend,
@@ -36,14 +45,26 @@ input[type="submit"] {
     font-style: normal;
 }
 
-h1{
-    text-align: center  ;
+body main h1 {
+    font-style: italic;
+    background-color: #5dc4ff;
+    border-bottom: 8px solid #192ac294;
+    border-bottom-right-radius: 0.6em;
+    border-bottom-left-radius: 0.6em;
+
+    padding: 0.5em;
+}
+
+h1 {
+    text-align: center;
 }
 
 fieldset {
     border-style: none;
-    padding: 0.5em 2%;
+    padding: 0.5em 0;
     margin: 0.5em 0;
+
+    align-self: center;
 }
 
 label {
@@ -89,15 +110,30 @@ input[type="checkbox"] {
 input[type="submit"] {
     min-height: 45px;
     width: 100vw;
-    margin-left: 13px;
+
     border: 1px solid rgba(124, 124, 124, 0.671);
 
-    font-size: 20px;
+    font-size: 30px;
     padding: 0.5em;
     border-radius: 0.6em;
+
+    font-style: italic;
+    background-color: #5dc4ff;
+    border-bottom: 8px solid #192ac294;
+    border-bottom-right-radius: 0.6em;
+    border-bottom-left-radius: 0.6em;
+
 }
 
-.features div{
+input[type="submit"]:hover {
+    background-color: #192ac2be;
+    border-bottom: 8px solid #5dc4ffdc;
+    color: #fff;
+    border-bottom-right-radius: 0.6em;
+    border-bottom-left-radius: 0.6em;
+}
+
+.features div {
     font-family: "Lora", serif;
     font-size: 16px;
     font-weight: 400;
@@ -105,19 +141,19 @@ input[type="submit"] {
     margin-bottom: 0.5em;
 }
 
-.features input[type="checkbox"]{
+.features input[type="checkbox"] {
     width: 25px;
     height: 25px;
     margin: 0.5em;
 }
 
-/* use reverse flexbox to take advantage of flex-direction: reverse */
 .stars {
     display: flex;
     align-items: center;
-    width: 30vw;
+    width: 100%;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -125,17 +161,16 @@ input[type="submit"] {
     display: none;
 }
 
-/* set properties of all labels */
 .stars>label {
-    margin: 0.2em auto;
-    font-size: 55px;
+    width: 30px;
+    height: 30px;
+    font-size: 45px;
     transition: 0.2s ease;
-    color: rgba(124, 124, 124, 0.671);
+    color: #449DD1;
 }
 
-/* give label a hover state */
 .stars label:hover {
-    color: rgb(255, 174, 1);
+    color: #192ac2c9;
     transition: 0.2s ease;
 }
 
@@ -143,15 +178,22 @@ input[type="submit"] {
     transform: scale(1.1);
 }
 
-/* set shape of unselected label */
 .stars label::before {
-    content: '\2605';
+    content: '\2606';
     position: absolute;
     top: 0px;
     line-height: 26px;
 }
 
-/* set full star shape for checked label and those that come after it */
 .stars input:checked~label:before {
     content: '\2605';
+}
+
+@media screen and (min-width: 700px) {
+
+    * {
+        margin: auto;
+        padding: 0;
+        max-width: 60vw;
+    }
 }
