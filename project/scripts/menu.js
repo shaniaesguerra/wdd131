@@ -2,6 +2,7 @@
 const menu = [
     {
         id: 'bnbrd-001',
+        // photoURL: '', -- add photo url here
         itemName: 'Plain Banana Bread',
         ingredients: ['Bananas', 'Flour', 'Sugar', 'Eggs', 'Vegetable Oil',
                       'Citrus Fruit Juice', 'Baking Powder', 'Baking Soda', 'Salt'],
