@@ -1,0 +1,1 @@
+//store in local storage the amount of times one subscribes
