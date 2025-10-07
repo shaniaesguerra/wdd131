@@ -299,6 +299,10 @@ div {
         padding: 30px 10%;
     }
 
+    .logo{
+        margin-left: auto;
+    }
+
     .navigation,
     .logo {
         display: flex;
