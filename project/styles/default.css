@@ -58,7 +58,7 @@ footer {
     border-top-right-radius: 2em;
 }
 
-a,
+
 h2,
 #font2 {
     font-family: var(--subheading-font);
@@ -70,6 +70,10 @@ h2,
 a {
     text-decoration: none;
     color: #ffff;
+    font-family: var(--subheading-font);
+    font-style: var(--subheading-font-style);
+    font-weight: var(--subheading-font-weight);
+    font-size: 1.5rem;
 }
 
 .navigation li,
@@ -164,6 +168,7 @@ nav a {
 }
 
 /*navigation bar styling*/
+
 .logo,
 .navigation li a:hover {
     cursor: pointer;
@@ -175,13 +180,14 @@ nav a {
 
 .navigation li {
     padding: 0px 20px;
+    font: optional;
 }
 
 .navigation li a {
     transition: all 0.3s ease 0s;
 }
 
-.navigation li a:hover {
+.navigation li a:hover{
     color: var(--accent);
 }
 
@@ -272,7 +278,7 @@ div {
 
 
 /*Large Screen View*/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 890px) {
 
     .navigation {
         display: flex;
