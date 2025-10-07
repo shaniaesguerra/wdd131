@@ -67,6 +67,15 @@ h2,
     font-size: var(--subheading-font-size);
 }
 
+h2 {
+    border-bottom: 4px solid var(--accent);
+    margin-bottom: 1em;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 0.6em;
+
+}
+
 a {
     text-decoration: none;
     color: #ffff;
@@ -83,12 +92,16 @@ a {
     list-style: none;
 }
 
-h1,
+h1, h4,
 #font1,
 .navigation {
     font-family: var(--heading-font);
     font-size: var(--heading-font-size);
     font-weight: var(--heading-font-weight);
+}
+
+h1{
+    text-transform: uppercase;
 }
 
 img {
@@ -179,6 +192,11 @@ figure {
 .logo img {
     width: 100px;
     height: auto;
+    animation: none;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
 }
 
 .logo,
@@ -275,18 +293,6 @@ div {
     margin-top: 0.5em;
 }
 
-.site-name h2,
-.site-purpose h2,
-.scenarios h2,
-.color-schema h2,
-.typography h2,
-.wireframe h2 {
-    border-bottom: 4px solid var(--accent);
-    margin-bottom: 1em;
-    color: #fff;
-    background-color: var(--secondary-color);
-    border-radius: 0.6em;
-}
 
 
 /*Large Screen View*/
@@ -299,7 +305,7 @@ div {
         padding: 30px 10%;
     }
 
-    .logo{
+    .logo {
         margin-left: auto;
     }
 
