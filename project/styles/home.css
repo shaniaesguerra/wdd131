@@ -63,6 +63,8 @@ fieldset {
 /*menu Cards*/
 .menuCards {
     display: block;
+    align-items: center;
+    justify-content: center;
 }
 
 .menuCards img {

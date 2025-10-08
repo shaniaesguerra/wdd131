@@ -231,7 +231,7 @@ figure {
 
 /*navigation bar styling*/
 .logo img {
-    width: 100px;
+    width: 90%;
     height: auto;
     animation: none;
 }
