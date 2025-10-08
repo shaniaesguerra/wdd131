@@ -9,6 +9,7 @@
         content="Shania Esguerra's Week 06 Project About Page for WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Shania Esguerra">
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +21,7 @@
 <body>
     <header>
         <figure class="logo">
-            <a href="home.html"><img src="images/logo-icon.webp" alt="Eliah's Bakery Logo"></a>
+            <a href="home.html"><img src="images/logo-icon.webp" alt="Eliah's Bakery Logo" loading="lazy"></a>
         </figure>
         <h1>ELIAH'S BAKERY</h1>
         <button id="menu"></button>
@@ -37,22 +38,23 @@
     </header>
     <main>
         <h1>About Us</h1>
-        <div>
-            <figure>
-                <img src="images/community.webp" alt="Community Photo">
-            </figure>
+        <div class="card" id="mission">
             <h2>Our Vision and Mission</h2>
+            <figure>
+                <img src="images/community.webp" alt="Community Photo" loading="lazy">
+            </figure>
+
             <p>Eliah's Bakery has a mission is to be able to create community and give back to the community. We would
                 like to create an inclusive community to have a safe space where people of different ethnicities could
                 gather and celebrate the Filipino culture just as how it is back home in the Philippines. Our vision is
                 to have our baked goods be the instrument for people to create community and learn more about Filipino
                 culture.</p>
         </div>
-        <div>
-            <figure>
-                <img src="images/profile.webp" alt="Owner Photo">
-            </figure>
+        <div class="card" id="owner">
             <h2>Meet the Owner and the Employee</h2>
+            <figure>
+                <img src="images/profile.webp" alt="Owner Photo" loading="lazy">
+            </figure>
             <p>I am Shania Esguerra, the owner and the only employee! I am 24 years old and still trying to earn my
                 university degree along side my business. I started this business because I missed the taste of food,
                 especially baked goods, back home in the Philippines. There were not a lot of Filipino bakeries in my
@@ -63,7 +65,7 @@
                 business. I am still learning as I go and hoping that my brand and company will be well known in the
                 future.</p>
         </div>
-        <div>
+        <div id="business-contact">
             <h3>Want to do Business with us?</h3>
             <p>Click below to see our contact details</p>
             <a href="contact.html"><button>See Contacts</button></a>
@@ -193,7 +195,7 @@
             </p>
             <p id="lastModified"></p>
         </div>
-    
+
     </footer>
 </body>
 
