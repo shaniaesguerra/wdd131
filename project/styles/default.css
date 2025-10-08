@@ -205,13 +205,15 @@ figure {
 
 /*Hamburger button*/
 #menu {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     border: 0;
     background: none;
     color: #fff;
     position: absolute;
-    top: 3%;
-    left: 6%;
+    top: 0;
+    left: 0;
+
+    margin: 3rem auto;
 }
 
 #menu::before {
