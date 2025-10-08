@@ -104,7 +104,7 @@ h1{
     text-transform: uppercase;
 }
 
-img {
+#logo-jpg {
     width: 200px;
     height: auto;
     animation: fade 5s;

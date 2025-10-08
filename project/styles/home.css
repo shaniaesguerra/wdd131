@@ -1,3 +1,9 @@
 fieldset{
     border-style: none;
 }
+
+.img-container{
+    width: 95vw;
+    display: block;
+
+}
