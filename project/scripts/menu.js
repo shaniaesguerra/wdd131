@@ -126,7 +126,7 @@ for (let i = 0; i < menu.length; i++) {
                     <li><strong>Quantity:</strong> ${menuItem.quantity} </li>
                 </ul>
                 <h4>PRICE: $ ${menuItem.price.toFixed(2)}</h4>
-                <button class="menuBtn" id="menu${i}">Order Now</button>
+                <button class="orderBtn">Order Now</button>
             </figure>`;
 }
 
@@ -134,3 +134,12 @@ for (let i = 0; i < menu.length; i++) {
 //  -- count the amount of times the button has been clicked for each product
 //  -- display as an alert
 //  -- store count in the local storage
+orderBtn = document.querySelectorAll("figure > button.orderBtn");
+
+if (orderBtn) {
+    orderBtn.forEach(button => {
+        button.addEventListener('click', () => {
+            window.location.href = "order.html";
+        });
+    });
+}
