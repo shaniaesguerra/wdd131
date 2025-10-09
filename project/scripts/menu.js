@@ -94,7 +94,7 @@ const menu = [
 
 ];
 
-//store number of times order button is clicked in local Storage
+//store number of times order button is clicked for each product in local Storage
 
 
 //populate grid with menu cards
@@ -117,6 +117,11 @@ for (let i = 0; i < menu.length; i++) {
                     <li><strong>Quantity:</strong> ${menuItem.quantity} </li>
                 </ul>
                 <h4>PRICE: $ ${menuItem.price.toFixed(2)}</h4>
-                <a href="order.html"><button>Order Now</button></a>
+                <a href="order.html"><button id="menu${i}">Order Now</button></a>
             </figure>`;
 }
+
+// create an event for each button click on each product
+//  -- count the amount of times the button has been clicked for each product
+//  -- display as an alert
+//  -- store count in the local storage
