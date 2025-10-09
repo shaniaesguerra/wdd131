@@ -418,6 +418,7 @@ button:hover{
 .send-form input[type="text"],
 .send-form input[type="email"],
 .send-form input[type="tel"],
+.send-form select,
 .send-form textarea {
     display: block;
     background-color: #eee;

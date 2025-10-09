@@ -1,5 +1,3 @@
-//store number of times order button is clicked for each product in local Storage
-
 //populate grid with menu cards
 makeMenuCard(menu);
 
