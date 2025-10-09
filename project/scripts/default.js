@@ -25,36 +25,27 @@ const contactBtn = document.querySelectorAll('.contactBtn');
 const menuBtn = document.querySelectorAll('.menuBtn');
 let orderBtn = document.querySelectorAll('.orderBtn');
 
-if (aboutBtn) {
-    aboutBtn.forEach(button => {
-        button.addEventListener('click', () => {
-            window.location.href = "about.html";
+makeClickEventToPage(aboutBtn, "about.html");
+makeClickEventToPage(contactBtn, "contact.html");
+makeClickEventToPage(menuBtn, "menu.html");
+makeClickEventToPage(orderBtn, "order.html");
+
+
+/*---------------------------------------------------------------------------------------------------------- 
+Function: makeClickEventToPage(button, page)
+Purpose: makes a click event for a button to go to another html page
+Description: Has two arguements, "button" which is the name of the DOM element you want to have
+            a click event added. "page" is the html page you want it to go to
+------------------------------------------------------------------------------------------------------------*/
+function makeClickEventToPage(button, page) {
+
+    if (button) { // if button(s) exists
+        //make a click event
+        button.forEach(btn => {
+            btn.addEventListener('click', () => {
+                window.location.href = page;
+            });
         });
-    });
+    }
+
 }
-
-if (contactBtn) {
-    contactBtn.forEach(button => {
-        button.addEventListener('click', () => {
-            window.location.href = "contact.html";
-        });
-    });
-}
-
-if (menuBtn) {
-    menuBtn.forEach(button => {
-        button.addEventListener('click', () => {
-            window.location.href = "menu.html";
-        });
-    });
-}
-
-if (orderBtn) {
-    orderBtn.forEach(button => {
-        button.addEventListener('click', () => {
-            window.location.href = "order.html";
-        });
-    });
-}
-
-

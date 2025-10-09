@@ -134,12 +134,8 @@ for (let i = 0; i < menu.length; i++) {
 //  -- count the amount of times the button has been clicked for each product
 //  -- display as an alert
 //  -- store count in the local storage
-orderBtn = document.querySelectorAll("figure > button.orderBtn");
 
-if (orderBtn) {
-    orderBtn.forEach(button => {
-        button.addEventListener('click', () => {
-            window.location.href = "order.html";
-        });
-    });
-}
+orderBtn = document.querySelectorAll("figure > button.orderBtn"); // making sure that all buttons are selected
+
+//function found in decault.js
+makeClickEventToPage(orderBtn, "order.html");
