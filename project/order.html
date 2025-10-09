@@ -38,10 +38,26 @@
         </nav>
     </header>
     <main>
+        <h1>Order Form</h1>
         <div class="send-form">
-            <form method="get">
+            <form method="get" action="orderSent.html">
                 <fieldset>
-                    <legend><h2>Order Form</h2></legend>
+                    <legend>
+                        <h3>Personal Information</h3>
+                    </legend>
+                    <label for="contact-fname">First Name <input type="text" name="contact-fname" id="contact-fname"
+                            placeholder="Enter your First Name" required></label>
+                    <label for="contact-lname">Last Name <input type="text" name="contact-lname" id="contact-lname"
+                            placeholder="Enter your Last Name" required></label>
+                    <label for="contact-phone">Phone Number<input type="tel" name="contact-phone" id="contact-phone"
+                            placeholder="123-456-7890"></label>
+                    <label for="email">Email <input type="email" name="email" id="email" placeholder="someone@email.com"
+                            required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h3>Your Order</h3>
+                    </legend>
                     <label id="label-sub">Add the Products you would like to order </label>
                     <select id="products">
                         <option value="" selected disabled>Please Select &#9660</option>
@@ -50,6 +66,7 @@
                     <button id="addProdBtn">Add Product</button>
                     <ul id="list"></ul>
                 </fieldset>
+                <input type="submit" value="Submit Order Form">
             </form>
         </div>
     </main>

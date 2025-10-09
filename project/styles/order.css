@@ -16,15 +16,7 @@
 
 .delete {
     width: fit-content;
-}
-
-.input {
-    display: flex;
-    gap: 1rem;
-}
-
-.list {
-    padding: 0.5rem;
+    
 }
 
 main ul {
@@ -42,7 +34,7 @@ main li {
 
 main li button{
     max-width: 50px;
-    margin: 0.5rem;
+    margin: auto 1em auto 1em;
     padding: 0.5rem;
 }
 

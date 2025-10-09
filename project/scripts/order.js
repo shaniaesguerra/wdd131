@@ -201,6 +201,7 @@ const menu = [
 //make options based on array items
 makeOptions(menu, "#products");
 
+//To get order list:
 const selection = document.querySelector('#products');
 const addProdBtn = document.querySelector('#addProdBtn');
 const list = document.querySelector('#list');
