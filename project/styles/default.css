@@ -56,19 +56,18 @@ header {
 footer {
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
+}
 
-    ul {
-        display: block;
-        list-style: none;
-        padding: 0.5rem;
-        margin-top: 1rem;
-        padding-bottom: 0;
+footer ul {
+    display: block;
+    list-style: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    padding-bottom: 0;
+}
 
-
-        li {
-            padding: 0.5rem;
-        }
-    }
+footer ul li {
+    padding: 0.5rem;
 }
 
 footer ul:first-of-type {
@@ -251,7 +250,6 @@ figure {
 
 .navigation li {
     padding: 0px 10px;
-    font: optional;
 }
 
 .navigation li a {
@@ -397,7 +395,7 @@ button:hover {
 }
 
 .send-form label {
-    padding: 2rem auto;
+    padding: 0.3rem ;
     text-align: left;
     text-indent: 20px;
     display: block;
