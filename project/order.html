@@ -49,17 +49,19 @@
                             placeholder="Enter your First Name" required></label>
                     <label for="contact-lname">Last Name <input type="text" name="contact-lname" id="contact-lname"
                             placeholder="Enter your Last Name" required></label>
-                    <label for="contact-phone">Phone Number<input type="tel" name="contact-phone" id="contact-phone"
+                    <label for="contact-phone">Phone Number (optional)<input type="tel" name="contact-phone" id="contact-phone"
                             placeholder="123-456-7890"></label>
                     <label for="email">Email <input type="email" name="email" id="email" placeholder="someone@email.com"
                             required></label>
+                    <label for="delivery-adrs">Delivery Address <input type="text" name="delivery-adrs" id="delivery-adrs"
+                            placeholder="Enter the Delivery Address" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>
                         <h3>Your Order</h3>
                     </legend>
                     <label id="label-sub">Add the Products you would like to order </label>
-                    <select id="products">
+                    <select id="products" required>
                         <option value="" selected disabled>Please Select &#9660</option>
                         <!--populate using js-->
                     </select>

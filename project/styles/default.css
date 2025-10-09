@@ -333,7 +333,7 @@ div {
 }
 
 input[type="submit"],
-button{
+button {
     font-family: var(--heading-font);
     font-size: 1rem;
     text-transform: uppercase;
@@ -352,7 +352,7 @@ button{
     cursor: pointer;
 }
 
-button{
+button {
     font-family: var(--heading-font);
     font-size: 1rem;
     appearance: none;
@@ -366,7 +366,7 @@ button{
     transition: 0.4s ease-out;
 }
 
-button:hover{
+button:hover {
     background-position: right;
     color: #000;
 }
@@ -431,6 +431,22 @@ button:hover{
     appearance: none;
     margin: auto;
     font-family: var(--body-font);
+}
+
+.send-form input[type="text"]:required,
+.send-form input[type="email"]:required,
+.send-form input[type="tel"]:required,
+.send-form select:required,
+.send-form textarea:required{
+    border-left: solid 8px var(--secondary-color);
+}
+
+.send-form input[type="text"]:valid,
+.send-form input[type="email"]:valid,
+.send-form input[type="tel"]:valid,
+.send-form select:valid,
+.send-form textarea:valid {
+    border-left: solid 8px rgb(0, 148, 0);
 }
 
 
