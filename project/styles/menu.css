@@ -1,0 +1,94 @@
+div img {
+    width: 200px;
+    height: auto;
+    border-radius: 0.6em;
+
+
+    margin-top: 0.5em;
+}
+
+main h1 {
+    padding: 0.5em 2em;
+    margin: 0.5em auto;
+    text-align: center;
+
+    border-bottom: 4px solid var(--accent);
+    margin-bottom: 1em;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 0.6em;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.menuCards ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0.5em 1em;
+    width: 75%;
+}
+
+li {
+    padding: 1em;
+
+}
+
+.menuCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 0.6em;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.menuCards figure {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 0.6em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.menuCards h3 {
+    margin: 0.5em auto;
+    font-family: var(--subheading-font);
+    font-weight: var(--subheading-font-weight);
+    font-size: var(--subheading-font-size);
+}
+
+.menuCards h4 {
+    margin: 0.5em 3em;
+    padding: 0.5em;
+    border-radius: 0.6em;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-image: linear-gradient(to bottom, #fff 50%, var(--secondary-color) 50%);
+    background-size: 200% 200%;
+    transition: 0.4s ease-out;
+}
+
+.menuCards h4:hover {
+    background-position: bottom;
+    color: #fff;
+    border-color: var(--secondary-color);
+}
+
+.menuCards button {
+    margin-bottom: 0.5em;
+}
+
+/*Large Screen View*/
+@media screen and (min-width: 890px) {
+    .menuCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-gap: 2em;
+        justify-content: center;
+        align-content: center;
+
+    }
+}

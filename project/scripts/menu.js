@@ -3,6 +3,7 @@ const menu = [
     {
         id: 'bnbrd-001',
         itemName: 'Plain Banana Bread',
+        description:'A full loaf (5" x 9" loaf) of moist and delicious homemade Banana Bread.',
         photoURL: 'images/plain-banana.webp', 
         ingredients: ['Bananas', 'Flour', 'Sugar', 'Eggs', 'Vegetable Oil',
                       'Citrus Fruit Juice', 'Baking Powder', 'Baking Soda', 'Salt'],
@@ -108,14 +109,14 @@ for (let i = 0; i < menu.length; i++) {
     const menuItem = menu[i];
     menuDiv.innerHTML += `
             <figure>
-                <img src="${menuItem.photoURL}" alt="${menuItem.itemName}">
+                <img src="${menuItem.photoURL}" alt="${menuItem.itemName}" loading="lazy">
                 <h3>${menuItem.itemName}</h3>
                 <ul>
-                    <li>Description: ${menuItem.description} </li>
-                    <li>Ingredients: ${menuItem.ingredients} </li>
-                    <li>Quantity: ${menuItem.quantity} </li>
+                    <li><strong>Description:</strong> ${menuItem.description} </li>
+                    <li><strong>Ingredients:</strong> ${menuItem.ingredients} </li>
+                    <li><strong>Quantity:</strong> ${menuItem.quantity} </li>
                 </ul>
-                <h4> $ ${menuItem.price}</h4>
+                <h4>PRICE: $ ${menuItem.price.toFixed(2)}</h4>
                 <a href="order.html"><button>Order Now</button></a>
             </figure>`;
 }
