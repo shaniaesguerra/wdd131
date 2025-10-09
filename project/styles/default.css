@@ -333,7 +333,7 @@ div {
 }
 
 input[type="submit"],
-button {
+button{
     font-family: var(--heading-font);
     font-size: 1rem;
     text-transform: uppercase;
@@ -352,13 +352,21 @@ button {
     cursor: pointer;
 }
 
-button {
+button{
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
     background-image: linear-gradient(to right, var(--primary-color) 50%, var(--accent) 50%);
     background-size: 200%;
     transition: 0.4s ease-out;
 }
 
-button:hover {
+button:hover{
     background-position: right;
     color: #000;
 }
@@ -395,7 +403,7 @@ button:hover {
 }
 
 .send-form label {
-    padding: 0.3rem ;
+    padding: 0.3rem;
     text-align: left;
     text-indent: 20px;
     display: block;

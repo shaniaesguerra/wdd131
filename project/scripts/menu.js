@@ -126,7 +126,7 @@ for (let i = 0; i < menu.length; i++) {
                     <li><strong>Quantity:</strong> ${menuItem.quantity} </li>
                 </ul>
                 <h4>PRICE: $ ${menuItem.price.toFixed(2)}</h4>
-                <button id="menu${i}"><a href="order.html">Order Now</a></button>
+                <button class="menuBtn" id="menu${i}">Order Now</button>
             </figure>`;
 }
 

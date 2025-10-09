@@ -39,6 +39,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*menu Cards*/
 .menuCards {
     display: block;
@@ -84,45 +85,42 @@ fieldset {
 }
 
 #seeMenu button,
-.orderBtn button,
-.detailsBtn button {
+.orderBtn,
+.detailsBtn{
     appearance: none;
     border: none;
     outline: none;
     background: none;
 }
 
-.orderBtn button {
+.orderBtn{
     color: #000;
     background-color: var(--accent);
 }
 
-#seeMenu button,
-.detailsBtn button {
+#seeMenu button, 
+.detailsBtn {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
-}
-
-#seeMenu button,
-.detailsBtn button {
     background-image: linear-gradient(to right, #FFF 50%, var(--secondary-color) 50%);
     background-size: 200%;
     transition: 0.4s ease-out;
 }
 
+
 #seeMenu button:hover,
-.detailsBtn button:hover {
+.detailsBtn:hover {
     background-position: right;
     color: #FFF;
 }
 
-.orderBtn button {
+.orderBtn {
     background-image: linear-gradient(to right, var(--accent) 50%, var(--primary-color) 50%);
     background-size: 200%;
     transition: 0.4s ease-out;
 }
 
-.orderBtn button:hover {
+.orderBtn:hover {
     background-position: right;
     color: #FFF;
 }
