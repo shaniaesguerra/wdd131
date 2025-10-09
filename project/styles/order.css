@@ -7,13 +7,11 @@
     flex-direction: column;
 }
 
-input,
-button {
-    padding: 0.5rem;
-}
+#label-sub{
 
-button {
-    margin: 0.5rem;
+   margin: 1em 0 0.3em 0;
+   padding: 0;
+   text-align: center;
 }
 
 .delete {
@@ -30,12 +28,28 @@ button {
 }
 
 main ul {
-    margin: 1rem;
+    margin: 2rem;
     list-style: none;
 }
 
 main li {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    text-align: left;
 }
+
+main li button{
+    max-width: 50px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+main li {
+    margin: 0.7em 0;
+    padding: 0.7em 0;
+    border-bottom: 1px solid var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+}
+

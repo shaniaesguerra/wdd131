@@ -38,28 +38,19 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1>Order Form</h1>
-            <h2> Nothing to see here yet! </h2>
-            <p>
-                Sorry, this page is currently under renovation.
-                <br>Check back on our facebook, instagram, and twitter page for updates
-                on when we have Online Orders available. For now, you can order through messaging our Facebook Page:
-                @Eliah's Bakery.
-                <br>
-                You can go and view other pages in our website instead!
-            </p>
-
-
-        </div>
         <div class="send-form">
-            <label>Add the Products you would like to order </label>
-            <select name="product" id="products">
-                <option value="" selected disabled>Please Select &#9660</option>
-                <!--populate using js-->
-            </select>
-            <button type="submit">Add Product</button>
-            <ul id="list"></ul>
+            <form method="get">
+                <fieldset>
+                    <legend><h2>Order Form</h2></legend>
+                    <label id="label-sub">Add the Products you would like to order </label>
+                    <select id="products">
+                        <option value="" selected disabled>Please Select &#9660</option>
+                        <!--populate using js-->
+                    </select>
+                    <button id="addProdBtn">Add Product</button>
+                    <ul id="list"></ul>
+                </fieldset>
+            </form>
         </div>
     </main>
     <footer>
