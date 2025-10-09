@@ -1,24 +1,3 @@
-:root {
-    /* Fonts */
-    --heading-font: "Josefin Sans", sans-serif;
-    --heading-font-size: 2em;
-    --heading-font-weight: 700;
-
-    --subheading-font: "Trirong", serif;
-    --subheading-font-weight: 500;
-    --subheading-font-size: 35px;
-    --subheading-font-style: italic;
-
-    --body-font: "Maitree", serif;
-    --body-font-size: 18px;
-    --body-font-weight: 400;
-
-    /*Color*/
-    --primary-color: #5e1815;
-    --secondary-color: #a4221c;
-    --accent: #ffc140;
-}
-
 fieldset {
     border-style: none;
 }
