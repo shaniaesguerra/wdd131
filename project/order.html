@@ -9,12 +9,14 @@
         content="Shania Esguerra's Week 06 Project Order Page for WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Shania Esguerra">
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/order.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&family=Maitree&family=Trirong:ital,wght@1,500&display=swap"
         rel="stylesheet">
     <script src="scripts/default.js" defer></script>
+    <script src="scripts/order.js" defer></script>
 </head>
 
 <body>
@@ -47,6 +49,16 @@
                 <br>
                 You can go and view other pages in our website instead!
             </p>
+
+
+        </div>
+        <div class="form">
+            <label for="product">Add the Products you would like to order </label>
+            <select name="product" id="products">
+                
+            </select>
+            <button type="submit">Add Product</button>
+            <ul id="list"></ul>
         </div>
     </main>
     <footer>
@@ -173,7 +185,7 @@
             </p>
             <p id="lastModified"></p>
         </div>
-    
+
     </footer>
 </body>
 

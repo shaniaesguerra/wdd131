@@ -149,7 +149,7 @@ smallLink.addEventListener("click", () => {
 
 
 /*---------------------------------------------------------------------------------------------------------- 
-Function: createTempleCards (templeObj, container)
+Function: createTempleCards (templeObj)
 Purpose: create temple cards which will populate in the HTML element specified.
 Description: Has one arguements, "templeObj" which is the name of the obj you want to iterate through.
             It will populate the photo grid with temple cards when called.
