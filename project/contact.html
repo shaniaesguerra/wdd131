@@ -9,6 +9,7 @@
         content="Shania Esguerra's Week 06 Project Contact Page for WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Shania Esguerra">
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/contact.css ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -37,27 +38,32 @@
     </header>
     <main>
         <!--Contact Form-->
-        <form method="get" action="message.html">
-            <h2> Do you have Questions? We can help you find the answer! </h2>
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="contact-fname">First Name <input type="text" name="contact-fname" id="contact-fname"
-                        placeholder="Enter your First Name" required></label>
-                <label for="contact-lname">Last Name <input type="text" name="contact-lname" id="contact-lname"
-                        placeholder="Enter your Last Name"></label>
-                <label for="contact-phone">Phone Number<input type="tel" name="contact-phone" id="contact-phone"
-                        placeholder="123-456-7890"></label>
-            </fieldset>
+        <div class="send-form">
+            <form method="get" action="message.html">
+                <legend><h2> Do you have Questions? <br> We can help you find the answers! </h2></legend>
+                <fieldset>
+                    <legend><h3>Personal Information</h3></legend>
+                    <label for="contact-fname">First Name <input type="text" name="contact-fname" id="contact-fname"
+                            placeholder="Enter your First Name" required></label>
+                    <label for="contact-lname">Last Name <input type="text" name="contact-lname" id="contact-lname"
+                            placeholder="Enter your Last Name"></label>
+                    <label for="contact-phone">Phone Number<input type="tel" name="contact-phone" id="contact-phone"
+                            placeholder="123-456-7890"></label>
+                </fieldset>
 
-            <fieldset>
-                <legend>Type of Concern / Inquiry</legend>
-                <label><input type="radio" name="concern" value="general">General Inquiry</label>
-                <label><input type="radio" name="concern" value="business">Business Inquiry</label>
-                <label><input type="radio" name="concern" value="order">Order Status</label>
-                <label><input type="radio" name="concern" value="other">Other</label>
-            </fieldset>
-            <input type="submit" value="Send Message">
-        </form>
+                <fieldset>
+                    <legend><h3>Type of Concern / Inquiry</h3></legend>
+                    <label><input type="radio" name="concern" value="general">General Inquiry</label>
+                    <label><input type="radio" name="concern" value="business">Business Inquiry</label>
+                    <label><input type="radio" name="concern" value="order">Order Status</label>
+                    <label><input type="radio" name="concern" value="other">Other</label>
+
+                    <label for=""><textarea name="message" id="message"
+                            placeholder="Type your concern / inquiry here..."></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
 
         <!--Contact details-->
         <div>
@@ -210,7 +216,7 @@
             </p>
             <p id="lastModified"></p>
         </div>
-    
+
     </footer>
 </body>
 
